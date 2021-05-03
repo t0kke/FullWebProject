@@ -57,7 +57,7 @@ public class MainPageTest {
     @AllureId("1940")
     @DisplayName("Проверка отображения блока \"Стартапы\" ")
     @Test
-    void titleClientageTest() {
+    void titleClientPageTest() {
         step("Открываем главную страницу", () -> open(""));
 
         step("Проверяем наличие заголовка в блоке с клиентами", () -> {
