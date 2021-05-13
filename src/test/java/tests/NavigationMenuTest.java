@@ -21,7 +21,7 @@ public class NavigationMenuTest {
         step("Открываем главную страницу", () -> open(""));
 
         step("Проверяем наличие всех разделов в навигационном меню", () -> {
-            $$("nav[id='navMenuBlock'] div a").shouldHave(containExactTextsCaseSensitive("Наши работы", "О нас", "Карьера", "Блог", "Контакты"));
+            $$("nav[id='navMenuBlock'] div a").shouldHave(containExactTextsCaseSensitive("Наши работы", "О нас", "Карьера", "Контакты"));
         });
     }
 
@@ -37,8 +37,6 @@ public class NavigationMenuTest {
                     .shouldHave(href("https://distillery.com/ru/about/"));
             $("#navMenuBlock").find(byText("Карьера"))
                     .shouldHave(href("https://distillery.com/ru/career-russia/"));
-            $("#navMenuBlock").find(byText("Блог"))
-                    .shouldHave(href("https://distillery.com/ru/blog/"));
             $("#navMenuBlock").find(byText("Контакты"))
                     .shouldHave(href("https://distillery.com/ru/contact/"));
         });

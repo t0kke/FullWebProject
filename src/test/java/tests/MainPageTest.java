@@ -8,7 +8,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
-import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
@@ -50,7 +51,7 @@ public class MainPageTest {
         step("Проверяем наличие и текст поп-аппа использования куков", () -> {
             $(".cookie-notification__text").shouldBe(visible);
             $(".cookie-notification__button").click();
-            $(".cookie-notification__text").shouldBe(disappear);
+            $(".cookie-notification_hidden").shouldBe(visible);
         });
     }
 
