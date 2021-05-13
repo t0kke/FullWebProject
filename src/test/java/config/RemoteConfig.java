@@ -11,6 +11,9 @@ public interface RemoteConfig extends Config {
     @Key("web.url")
     String webBaseUrl();
 
+    @Key("web.browser")
+    String browerName();
+
     @Key("web.remote.driver.user")
     String selenoidDriverUser();
 

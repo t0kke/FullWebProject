@@ -7,6 +7,8 @@ public class ConfigHelper {
         return getRemoteConfig().webBaseUrl();
     }
 
+    public static String getBrowserName(){return  getRemoteConfig().browerName(); }
+
     public static String getRemoteDriver() {
         // https://%s:%s@selenoid.autotests.cloud/wd/hub/
         return String.format(System.getProperty("web.remote.driver"),

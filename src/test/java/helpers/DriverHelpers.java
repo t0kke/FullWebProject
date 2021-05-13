@@ -16,6 +16,7 @@ public class DriverHelpers {
         addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
 
         Configuration.baseUrl = ConfigHelper.getBaseUrl();
+        Configuration.browser = ConfigHelper.getBrowserName();
         Configuration.startMaximized = true;
 
         if (ConfigHelper.isRemoteWebDriver()) {
