@@ -1,6 +1,7 @@
 package tests;
 
 import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
 import lifecycle.WebTestLifeCycle;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -12,6 +13,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
+@Owner("Kataev German")
 @Feature("Navigation menu tests")
 @ExtendWith(WebTestLifeCycle.class)
 public class NavigationMenuTest {

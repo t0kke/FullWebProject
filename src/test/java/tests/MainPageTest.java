@@ -1,7 +1,9 @@
 package tests;
 
+import annotations.JiraIssue;
 import io.qameta.allure.AllureId;
 import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import lifecycle.WebTestLifeCycle;
 import org.junit.jupiter.api.DisplayName;
@@ -14,7 +16,9 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
+@Owner("Kataev German")
 @Feature("Main page tests")
+@JiraIssue("QC3-37")
 @ExtendWith(WebTestLifeCycle.class)
 public class MainPageTest {
     @DisplayName("Проверка отображения названия компании, заголовка и подзаголовка в блоке с видео")
