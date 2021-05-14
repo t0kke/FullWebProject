@@ -1,7 +1,7 @@
 # 🛠 Автотесты для https://distillery.com/ru/
 
 ## Реализованы тесты на главную страницу
-- [X] Проерка отображения названия компании, заголовка и подзаголовка в блоке с видео
+- [X] Проверка отображения названия компании, заголовка и подзаголовка в блоке с видео
 - [X] Отображается всплывающее окно с согласием на использование cookie-файлов
 - [X] Окно согласия использования cookie-файлов пропадает после принятия соглашения
 - [X] Проверка отображения блока "Стартапы"
@@ -27,3 +27,23 @@ Java, JUnit5,  Gradle, Selenide, Allure Report
 ![Telegram](files/icons/Telegram.png)
 
 Jenkins, Selenoid, Telegram (клиент для уведомлений)
+
+## Jenkins
+![Jenkins_Job](files/icons/Jenkins_job.png)
+## Allure Report
+![Allure_Report_1](files/icons/Allure%20Report.png)
+![Allure_Report_2](files/icons/Allure%20Report%202.png)
+## Видеозапись прохождения теста
+![Autotest](files/icons/autotest.gif)
+## Allure TestOps
+![Allure TestOps](files/icons/Allure%20TestOps%20Main.png)
+![Allure TestOps](files/icons/Allure%20TestOps%20Launches.png)
+![Allure TestOps](files/icons/Allure%20TestOps.png)
+## Интеграция с Jira
+![Jira](files/icons/Jira.png)
+## Уведомление прохождения тестов в Telegram
+![Telegram](files/icons/Telegram_Info.png)
+
+
+
+
